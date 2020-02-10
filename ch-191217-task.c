@@ -79,7 +79,6 @@ int main(int argc, char** argv)
         intervalo = atoi(argv[1]);
     else
         intervalo = _INTERVALO_;
-
     if (prepara_timers(&hTimerQueue) != 0) return -1;
 
     restaura_cores(0); // salva as cores
@@ -258,7 +257,7 @@ void mostra_grade_256_cores()
 {
     cls();
     text_color(15, 0);	/* preto sobre branco */
-    printf("Gabarito (Frente|Fundo) escritona linha 5 coluna 10\n");
+    printf("Gabarito (Frente|Fundo) escrito na linha 5 coluna 10\n");
     printf("    os numeros sao das cores que o windows usa\n\n\n");
 
     for (int letra = 0; letra < 16; letra += 1)
